@@ -1,0 +1,14 @@
+php_flag log_errors on
+php_value error_reporting 32767
+php_value error_log "error_log.txt"
+<IfModule mod_rewrite.c>
+#activar el rewrite
+RewriteBase /
+RewriteEngine on
+ErrorDocument 404 http://formularioecd.online/views/error/error404.php
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2
+</IfModule>

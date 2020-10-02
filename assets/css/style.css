@@ -1,0 +1,500 @@
+html{
+    background-color: white;
+}
+li {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+
+}
+
+.banner {
+    width: 100%;
+    background-image: url('<?=base_url?>');
+}
+
+.banner img{
+    height: 13rem;
+}
+.container {
+    min-height: 700px;
+    width: 80%;
+    padding: 8rem 20px 20px 20px;
+    
+    margin-right:auto ;
+    margin-left: auto;
+    
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center {
+    padding: 2rem;
+    background-color: rgb(245, 245, 245);
+    border-radius: 1rem;
+
+}
+
+.title h1 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.title img {
+    width: 100%;
+}
+
+.title p {
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: inherit;
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0px .5px 2px black;
+    border: .2rem solid rgb(0, 119, 109);
+    border-radius: 1rem;
+}
+
+.index h3{
+    color: black;
+}
+
+.index p {
+    color: black!important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center h3{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(32, 39, 38);
+    border-bottom: 3px solid rgb(0, 119, 109) ;
+}
+.center p {
+    color: rgb(105, 105, 105);
+}
+
+@media only screen and (min-width:768px) {
+    .container{
+        width: 60%;
+    }
+    .center {
+        padding: 3rem;
+    }
+}
+.navegacion {
+    width: 100%;
+}
+
+.navegacion li {
+    display: inline-block;
+    /*width: 20%;*/
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    align-items: center;
+}
+.navegacion li a {
+    margin: 0;
+    width: 6rem;
+    align-items: center;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-sm input {
+    width: 100%;
+    height: 2rem;
+    padding: 2px;
+    margin-bottom: 1rem;
+    background-color: rgb(250, 250, 250)!important;
+    border: none;
+    border-radius: .5rem;
+    color: black;
+}
+
+
+.col-sm select {
+    display: inline-block;
+    height: 2rem;
+    margin: 0 2rem .7rem 0;
+    margin-right: 2rem;
+    border: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+
+.col2 {
+    display: flex;
+    align-items: center;
+}
+.col2 label, .lbl {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-right: 2px;
+    font-weight: bold;
+    color:rgb(105, 105, 105) ;
+    text-transform: uppercase;
+
+}
+
+@media only screen and (min-width:768px) {
+    .row{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 2rem;
+    }
+    .col-sm {
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .fech {
+        grid-column: 1 / 3;
+    }
+    .lbl {
+        grid-column: 1 / 3;
+      
+    }
+    .meet {
+        grid-column: 1 / 3;
+    }
+}
+
+.atention{
+    background-color: rgba(185, 82, 82, 0.493);
+    border-radius: .5rem;
+}
+
+.atention p {
+    color: white;
+    font-size: .8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+.btn {
+    display: inline-block;
+    height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    
+    background-color: rgb(209, 208, 207);
+    
+}
+
+.button  {
+    margin-top: 1rem;
+    background-color:rgb(226, 226, 226) ;
+    color:black;
+    width: 10rem;
+    transition: 0.3s ease-in-out all;
+}
+
+.btn-select {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+.button:hover {
+    cursor: pointer;
+    background-color:rgb(42, 150, 0);
+    color: white;
+}
+
+/*Aceptado*/
+.back {
+    background-color: rgb(201, 201, 201)!important;
+    border-radius: 1rem;
+    padding: .5rem;
+    
+}
+.red {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    color: red!important;
+    text-transform: uppercase;
+}
+
+.back p, .back h3{
+    color: black;
+}
+.back p {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.date {
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: none!important;
+
+}
+
+.codigo {
+    font-size: 2rem;
+}
+/*QR*/
+.img_qr {
+    width: 80%;
+
+}
+
+/*Login*/
+
+
+.ing input {
+    width: 80%;
+}
+
+@media only screen and (min-width:768px) {
+    .ing input {
+        width: 40%;
+    }
+}
+/*Cancelado*/
+
+.inpt{
+    width: 100%;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin-right: 1rem;
+    margin-top: 2rem;
+    color:black;
+    font-size: .7rem;
+
+}
+inpt:focus, inpt.form-control:focus{
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+
+}
+.inpt::placeholder{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.inpt:focus{
+    border: none;
+}
+
+.deleted {
+    background-color: rgba(82, 185, 82, 0.493);
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+.notEncont {
+    background-color: rgba(185, 82, 82, 0.493);
+    padding: 2rem;
+    border-radius: 1rem;
+
+}
+
+.notEncont p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+.deleted p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*admin*/
+
+.item {
+    margin-top: 2rem;
+    width: 100%;
+}
+.item table{
+    margin: 0;
+    width: 100%;
+    background-color: burlywood;
+}
+table th{
+    font-size: 15px;
+}
+
+/*Buscar Turno*/
+.title-turno{
+    margin: 0px 0px 30px 0px
+}
+.title-turno h2{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0.2rem;
+    border-bottom: 2px solid rgb(170, 38, 38);
+
+}
+
+.title-turno p{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+}
+.mi-turno{
+    background-color: rgb(230, 230, 230);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width:520px) {
+    .mis-turnos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+        
+    }
+}
+
+.mi-turno p {
+    margin: 0.2px;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mi-turno .turn{
+    background-color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.mi-turno .turn p{
+    font-weight: bold;
+    color: rgb(170, 38, 38);
+}
+
+.turn img{
+    width: 80%;
+}
+
+
+
+.but {
+    background-color:  black ;
+    padding: 0.6rem;
+    color: white;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    width: 10rem;
+    margin-top: 1rem;
+
+}
+@media only screen and (min-width:520px) {
+    .but{
+        width: 9rem;
+    }
+    .botones {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
+    }
+}
+.button-ver{
+    background-color: teal;
+}
+.button-cancel{
+    background-color: rgb(170, 38, 38);
+}
+
+#footer{
+    margin-top: 1rem;
+    clear: both;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom: 10px;
+    color: white;
+    background: #222222;
+    border-top: 4px solid #01B1EA;
+    
+}
+
+/*Login*/
+.asistentes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.asistente{
+    width: 8rem;
+    background-color: rgb(170, 38, 38);
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+
+.asistente p{
+
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .5rem;
+  
+}
+
+@media only screen and (min-width:520px) {
+    .asistentes{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .asistente{
+        width: 14rem;
+    }
+    .asistente p{
+        font-size: 1rem;
+    }
+}
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #ccc;
+}
+.titulo h2{
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+.cant_inscriptos{
+    font-weight: bold;
+    color: rgb(170, 38, 38)!important;
+    font-size: 2rem;
+    margin-bottom:3rem;
+    border-bottom: 2px solid #ccc;
+}
+
+table{
+    margin:4rem auto;
+    text-align: center;
+    width: auto;
+    border-bottom: 1px solid #ccc;
+}
